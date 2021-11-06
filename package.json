@@ -21,6 +21,6 @@
     "fibers": "^5.0.0",
     "nuxt-windicss": "^2.0.5",
     "prettier": "^2.3.2",
-    "sass-loader": "10"
+    "sass-loader": "12"
   }
 }
