@@ -1,6 +1,6 @@
 <template>
     <section class="container skill" id="section-skill">
-        <h1>My love framwork</h1>
+        <h1>{{$t("skill.title")}}</h1>
         <div class="row">
             <a class="card" v-for="(skill , name) in skills" :key="skill.name" :href="skill.url">
                 <img :src="'image/skill/' + skill.icon" />
@@ -41,11 +41,9 @@ export default {
 }
 </script>
 
-<style scoped>
 
-.skill h1 {
-    @apply "text-4xl";
-}
+
+<style scoped>
 .row {
     @apply "md:flex flex-wrap my-5 ";
 }

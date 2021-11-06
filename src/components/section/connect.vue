@@ -1,7 +1,7 @@
 <template>
     <section class="connect-me container" id="section-connect">
-        <h1 class="text-4xl mb-8">Interested in my work?</h1>
-        <a href="https://t.me/salemkode" class="btn">Send me a message</a>
+        <h1>{{ $t("connect.title") }}</h1>
+        <a href="https://t.me/salemkode" class="btn">{{ $t("connect.button") }}</a>
         <div class="flex mt-3 py-5">
             <a href="https://twitter.com/salemkode">
                 <svg

@@ -2,23 +2,40 @@
   <header class="container">
     <nav>
       <h1>
-        <a href="/">{{ $t('title') }}</a>
-        <img src="/image/icons/menu.svg" @click="showDropdown" class="block md:hidden" />
+        <a href="/">{{ $t('navbar.title') }}</a>
+        <img src="image/icons/menu.svg" @click="showDropdown" class="block md:hidden" />
       </h1>
-      <ul :class="'nav-list ' + (dropdown_menu ? 'menu-show' : '')">
-        <li v-for="(item,key) in $i18n.t('navbar', { returnObjects: true })" :key="item">
-          <button @click="scrollTo(section[key])">{{ item }}</button>
-        </li>
-      </ul>
+      <SlideUpDown :active="dropdown_menu">
+        <ul ref="navList" class="nav-list">
+          <li v-for="(item,key) in $i18n.t('navbar', { returnObjects: true })" :key="item">
+            <button @click="scrollTo(section[key])">{{ item }}</button>
+          </li>
+        </ul>
+      </SlideUpDown>
     </nav>
   </header>
 </template>
 
 <script>
+import SlideUpDown from 'vue-slide-up-down'
+
 export default {
+  mounted() {
+    let _this = this;
+    if (document.body.offsetWidth < 752) {
+      this.dropdown_menu = false
+    }
+    window.addEventListener("resize", function () {
+      if (document.body.offsetWidth < 752) {
+        _this.dropdown_menu = false
+      }else {
+        _this.dropdown_menu = true
+      }
+    })
+  },
   data() {
     return {
-      dropdown_menu: false,
+      dropdown_menu: true,
       section: {
         services: "#section-service",
         contact: "#section-connect"
@@ -27,11 +44,14 @@ export default {
   },
   methods: {
     showDropdown() {
-      this.dropdown_menu = !this.dropdown_menu
+      this.dropdown_menu = !this.dropdown_menu;
     },
     scrollTo(selector) {
       document.querySelector(selector).scrollIntoView()
     }
+  },
+  components: {
+    SlideUpDown
   }
 }
 </script>
@@ -47,17 +67,13 @@ nav {
     @apply "m-1 p-0 text-2xl flex justify-between";
   }
   .nav-list {
-    @apply "hidden md:flex flex-col md:flex-row";
+    @apply "flex flex-col md:flex-row";
     li {
       @apply "m-1 p-1";
       &:last-child {
         background: var(--sec-color);
         @apply "px-3 py1 text-black rounded-md";
       }
-    }
-    &.menu-show {
-      animation: drop 1s;
-      display: flex;
     }
   }
 }
