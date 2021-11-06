@@ -1,0 +1,299 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.com/svgjs"
+  width="512"
+  height="512"
+  x="0"
+  y="0"
+  viewBox="0 0 64 64"
+  style="enable-background: new 0 0 512 512"
+  xml:space="preserve"
+  class=""
+>
+  <g>
+    <linearGradient
+      xmlns="http://www.w3.org/2000/svg"
+      id="linear-gradient"
+      gradientUnits="userSpaceOnUse"
+      x1="14"
+      x2="50"
+      y1="32"
+      y2="32"
+    >
+      <stop offset="0" stop-color="#3442d1"></stop>
+      <stop offset="1" stop-color="#5a1fa0"></stop>
+    </linearGradient>
+    <g xmlns="http://www.w3.org/2000/svg" id="bitcoin">
+      <g fill="#ffa100">
+        <path
+          d="m41 8h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2z"
+          fill="#68ca5f"
+          data-original="#ffa100"
+          style=""
+          class=""
+        ></path>
+        <path
+          d="m31 14v-7a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-1v6a1 1 0 0 1 -2 0z"
+          fill="#68ca5f"
+          data-original="#ffa100"
+          style=""
+          class=""
+        ></path>
+        <path
+          d="m32 58h-9a1 1 0 0 1 0-2h8v-6a1 1 0 0 1 2 0v7a1 1 0 0 1 -1 1z"
+          fill="#68ca5f"
+          data-original="#ffa100"
+          style=""
+          class=""
+        ></path>
+        <path
+          d="m44.73 20.27a1 1 0 0 1 -.73-1.71l7.86-7.86a1 1 0 0 1 1.42 1.42c-8.49 8.5-7.97 8.15-8.55 8.15z"
+          fill="#68ca5f"
+          data-original="#ffa100"
+          style=""
+          class=""
+        ></path>
+        <path
+          d="m11.41 53.59a1 1 0 0 1 -.71-1.71l2.18-2.18a1 1 0 0 1 1.42 1.42c-2.2 2.19-2.3 2.47-2.89 2.47z"
+          fill="#68ca5f"
+          data-original="#ffa100"
+          style=""
+          class=""
+        ></path>
+        <path
+          d="m15.41 49.59a1 1 0 0 1 -.71-1.71l3.86-3.88a1 1 0 0 1 1.44 1.44c-4.28 4.25-4 4.15-4.59 4.15z"
+          fill="#68ca5f"
+          data-original="#ffa100"
+          style=""
+          class=""
+        ></path>
+        <path
+          d="m18.59 21h-6.59a1 1 0 0 1 -1-1v-11a1 1 0 0 1 2 0v10h5.59a1 1 0 0 1 0 2z"
+          fill="#68ca5f"
+          data-original="#ffa100"
+          style=""
+          class=""
+        ></path>
+        <path
+          d="m51 55v-10h-5.59a1 1 0 0 1 0-2h6.59a1 1 0 0 1 1 1v11a1 1 0 0 1 -2 0z"
+          fill="#68ca5f"
+          data-original="#ffa100"
+          style=""
+          class=""
+        ></path>
+        <path
+          d="m6 40v-3c0-.73 0-.54 7.42-5.81a1 1 0 0 1 1.16 1.62l-6.58 4.7v2.49a1 1 0 0 1 -2 0z"
+          fill="#68ca5f"
+          data-original="#ffa100"
+          style=""
+          class=""
+        ></path>
+        <path
+          d="m50 33a1 1 0 0 1 -.58-1.81l6.58-4.7v-2.49a1 1 0 0 1 2 0c0 3.24.12 3.43-.42 3.81-7.58 5.39-7.12 5.19-7.58 5.19z"
+          fill="#68ca5f"
+          data-original="#ffa100"
+          style=""
+          class=""
+        ></path>
+      </g>
+      <circle
+        cx="32"
+        cy="32"
+        fill="url(#linear-gradient)"
+        r="18"
+        data-original="url(#linear-gradient)"
+        style=""
+      ></circle>
+      <circle
+        cx="32"
+        cy="32"
+        fill="#96a1c3"
+        r="18"
+        data-original="#96a1c3"
+        style=""
+        class=""
+      ></circle>
+      <circle
+        cx="32"
+        cy="32"
+        fill="#f5f7ff"
+        r="13"
+        data-original="#f5f7ff"
+        style=""
+        class=""
+      ></circle>
+      <path
+        d="m36.36 31.55a3.51 3.51 0 0 0 -2.36-5.55v-1a1 1 0 0 0 -2 0v1h-2v-1a1 1 0 0 0 -2 0v1h-1a1 1 0 0 0 0 2v8a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h2v1a1 1 0 0 0 2 0v-1c4.41 0 5.16-4.69 2.36-6.45zm-2.8-3.55a1.5 1.5 0 0 1 0 3h-4.56v-3zm.94 8h-5.5v-3h5.5a1.5 1.5 0 0 1 0 3z"
+        fill="#68ca5f"
+        data-original="#ffa100"
+        style=""
+        class=""
+      ></path>
+      <circle
+        cx="43"
+        cy="7"
+        fill="#68ca5f"
+        r="3"
+        data-original="#ffa100"
+        style=""
+        class=""
+      ></circle>
+      <circle
+        cx="21"
+        cy="57"
+        fill="#68ca5f"
+        r="3"
+        data-original="#ffa100"
+        style=""
+        class=""
+      ></circle>
+      <circle
+        cx="54"
+        cy="10"
+        fill="#68ca5f"
+        r="3"
+        data-original="#ffa100"
+        style=""
+        class=""
+      ></circle>
+      <circle
+        cx="10"
+        cy="54"
+        fill="#68ca5f"
+        r="3"
+        data-original="#ffa100"
+        style=""
+        class=""
+      ></circle>
+      <circle
+        cx="12"
+        cy="7"
+        fill="#68ca5f"
+        r="3"
+        data-original="#ffa100"
+        style=""
+        class=""
+      ></circle>
+      <circle
+        cx="52"
+        cy="57"
+        fill="#68ca5f"
+        r="3"
+        data-original="#ffa100"
+        style=""
+        class=""
+      ></circle>
+      <circle
+        cx="7"
+        cy="42"
+        fill="#68ca5f"
+        r="3"
+        data-original="#ffa100"
+        style=""
+        class=""
+      ></circle>
+      <circle
+        cx="57"
+        cy="22"
+        fill="#68ca5f"
+        r="2"
+        data-original="#ffa100"
+        style=""
+        class=""
+      ></circle>
+      <path
+        d="m13 32a19 19 0 0 1 19-19c18 0 26 23.12 11.48 34.13a1 1 0 0 1 -1.2-1.6c13-9.85 5.84-30.53-10.28-30.53a17 17 0 1 0 3 33.74 1 1 0 0 1 .36 2 19 19 0 0 1 -22.36-18.74z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m39 49.6a1 1 0 0 1 -.39-1.92l.49-.22a1 1 0 0 1 .9 1.76 2.61 2.61 0 0 1 -1 .38z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m13 32a19 19 0 0 1 19-19c18 0 26 23.12 11.48 34.13a1 1 0 0 1 -1.2-1.6c13-9.85 5.84-30.53-10.28-30.53a17 17 0 1 0 3 33.74 1 1 0 0 1 .36 2 19 19 0 0 1 -22.36-18.74z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m39 49.6a1 1 0 0 1 -.39-1.92l.49-.22a1 1 0 0 1 .9 1.76 2.61 2.61 0 0 1 -1 .38z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m32 46c-14.1 0-19.3-18.61-7.3-25.94a1 1 0 0 1 1 1.7c-10.24 6.29-5.79 22.24 6.3 22.24a12 12 0 1 0 -2.86-23.66 1 1 0 0 1 -.48-1.94 14 14 0 1 1 3.34 27.6z"
+        fill="#ccd3eb"
+        data-original="#ccd3eb"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m43 10a3 3 0 1 1 3-3 3 3 0 0 1 -3 3zm0-4a1 1 0 0 0 0 2 1 1 0 0 0 0-2z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m21 60a3 3 0 1 1 3-3 3 3 0 0 1 -3 3zm0-4a1 1 0 0 0 0 2 1 1 0 0 0 0-2z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m54 13a3 3 0 1 1 3-3 3 3 0 0 1 -3 3zm0-4a1 1 0 0 0 0 2 1 1 0 0 0 0-2z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m10 57a3 3 0 1 1 3-3 3 3 0 0 1 -3 3zm0-4a1 1 0 0 0 0 2 1 1 0 0 0 0-2z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m12 10a3 3 0 1 1 3-3 3 3 0 0 1 -3 3zm0-4a1 1 0 0 0 0 2 1 1 0 0 0 0-2z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m52 60a3 3 0 1 1 3-3 3 3 0 0 1 -3 3zm0-4a1 1 0 0 0 0 2 1 1 0 0 0 0-2z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m7 45a3 3 0 1 1 3-3 3 3 0 0 1 -3 3zm0-4a1 1 0 0 0 0 2 1 1 0 0 0 0-2z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+      <path
+        d="m57 25a3 3 0 0 1 0-6c3 0 3.92 4 2 4a1 1 0 0 1 -1-1 1 1 0 1 0 -1 1 1 1 0 0 1 0 2z"
+        fill="#033c59"
+        data-original="#033c59"
+        style=""
+        class=""
+      ></path>
+    </g>
+  </g>
+</svg>
