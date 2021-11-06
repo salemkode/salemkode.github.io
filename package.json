@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^7.0.3",
-    "core-js": "^3.15.1",
+    "core-js": "^3.19.1",
     "nuxt": "^2.15.7",
     "sass": "^1.42.1",
     "vue-fragment": "^1.5.2"
