@@ -1,0 +1,17 @@
+.card {
+  @apply "shadow-xl mx-2 rounded-md";
+  border: #0000005e 2px solid;
+  transition: all 1s;
+}
+
+section > h1 {
+    margin: 1em 0;
+}
+
+.btn {
+    @apply "px-5 py-3 bg-indigo-700 inline-block rounded-lg text-white text-1xl";
+}
+
+* {
+  scroll-behavior: smooth;
+}
