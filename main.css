@@ -1,3 +1,22 @@
+html:not(.loaded) {
+  overflow: hidden;
+}
+
+@keyframes loaded {
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+    display: none;
+  }
+}
+html.loaded .avatar-container::before{
+  animation: 1s loaded forwards;
+}
+
 .card {
   @apply "shadow-xl mx-2 rounded-md";
   border: #0000005e 2px solid;
@@ -5,11 +24,11 @@
 }
 
 section > h1 {
-    margin: 1em 0;
+  @apply "text-2xl md:text-4xl my-8";
 }
 
 .btn {
-    @apply "px-5 py-3 bg-indigo-700 inline-block rounded-lg text-white text-1xl";
+  @apply "px-5 py-3 bg-indigo-700 inline-block rounded-lg text-white text-1xl";
 }
 
 * {
