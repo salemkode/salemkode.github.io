@@ -3,14 +3,12 @@
     <div class="left">
       <h1>
         <span v-html="$t('us.name')" />
-        <br>
+        <br />
         <small>{{ $t('us.work') }}</small>
       </h1>
     </div>
     <div class="right">
-      <span class="avatar-container">
-        <img src="image/avatar.jpg" class="avatar" alt="avatar" />
-      </span>
+      <img src="image/avatar.jpg" class="avatar" alt="avatar" />
     </div>
   </section>
 </template>
@@ -33,23 +31,6 @@ h1 {
   box-shadow: 20px 20px 0 var(--sec-color);
   transition: all 1s;
 }
-.avatar-container {
-  @apply "block relative";
-}
-.avatar-container::before {
-  content: "";
-  position: absolute;
-  background: var(--sec-color);
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transform: scale(5);
-  z-index: 1000;
-  overflow: hidden;
-  /*opacity: 0;*/
-}
-
 .landing > * .avatar:hover {
   box-shadow: -20px 20px 0 var(--sec-color);
 }
