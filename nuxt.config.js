@@ -26,6 +26,11 @@ export default {
     "src/static/main.css"
   ],
 
+  // Set base
+  router: {
+    base: process.env.BASE || '/next/'
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     "plugin/aos.vue"
