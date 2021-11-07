@@ -7,7 +7,7 @@
       </h1>
       <SlideUpDown :active="dropdown_menu">
         <ul ref="navList" class="nav-list">
-          <li v-for="(item,key) in $i18n.t('navbar', { returnObjects: true })" :key="item">
+          <li v-for="(item,key) in $i18n.t('navbar.content', { returnObjects: true })" :key="item">
             <button @click="scrollTo(section[key])">{{ item }}</button>
           </li>
         </ul>

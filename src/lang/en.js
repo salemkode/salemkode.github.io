@@ -1,8 +1,10 @@
 export default {
   navbar: {
     title: 'salemkode',
-    services: 'my services',
-    contact: 'contact Us',
+    content: {
+      services: 'my services',
+      contact: 'contact Us',
+    },
   },
   us: {
     name: "Hi, I'm <br/> Salem Mohammed Shamakh",
