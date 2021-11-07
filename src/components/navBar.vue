@@ -3,7 +3,7 @@
     <nav>
       <h1>
         <a href="/">{{ $t('navbar.title') }}</a>
-        <img src="image/icons/menu.svg" @click="showDropdown" class="block md:hidden" />
+        <img :src="'image/icons/menu.svg'" @click="showDropdown" class="block md:hidden" />
       </h1>
       <SlideUpDown :active="dropdown_menu">
         <ul ref="navList" class="nav-list">
