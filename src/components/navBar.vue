@@ -1,16 +1,16 @@
 <template>
-    <header>
+    <header :class="scrolled ? 'scrolled' : ''">
         <nav>
             <h1>SalemKode</h1>
             <ul class="media-list">
                 <li v-for="(site,name) in media" :key="name">
-                    <a href="site.url" class="media-item">
+                    <a :href="site.url" class="media-item">
                         <img :src="'media/' + name + '.svg'" :alt="'icon of' + name" />
                     </a>
                 </li>
                 <li class="lang-btn">
                     <img src="landing/world.svg" alt />
-                    <span> English </span>
+                    <span>English</span>
                 </li>
             </ul>
         </nav>
@@ -21,6 +21,7 @@
 export default {
     data() {
         return {
+            scrolled: false,
             media: {
                 github: {
                     url: 'https://github.com/salemkode',
@@ -33,16 +34,25 @@ export default {
                 },
             }
         }
+    },
+    mounted() {
+        let vue = this;
+        window.onscroll = function () {
+            vue.scrolled = !!window.scrollY;
+        }
     }
 }
 </script>
 
 <style scoped>
 header {
-    @apply "fixed z-50 py-4 font-bold container bg-white bg-opacity-30";
+    @apply "fixed right-0 left-0 z-50 py-4 font-bold transition";
 }
 header nav {
-    @apply "w-full flex justify-between items-center";
+    @apply "w-full flex justify-between container items-center";
+}
+header.scrolled {
+    @apply "bg-white shadow-lg";
 }
 header nav .media-list {
     @apply "flex";
