@@ -1444,17 +1444,17 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@splidejs/splide@^3.2.2":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-3.2.5.tgz#0e626ac23f7eae4a7a46ace065ce5e9394cc0c3a"
-  integrity sha512-V54jDr6M6tB3EzuzRzSliUs80npqWKWWu5s/AK9tiZ09M6sDkuTl7coufM7yJiMEUcuuKHGIV8pwYBfJfujn8Q==
+"@splidejs/splide@^3.2.7":
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-3.2.7.tgz#c42041029d6ff56c977d4d8f80fc961422a51966"
+  integrity sha512-Y25B7TJ3yLgvV3N5RrE9QsJxPyB7WfHnfmSlsN/SeX++Q9g1NyfgxqbmrZoCkcpqBynMLuZ/vCT77rAEI6ILzg==
 
-"@splidejs/vue-splide@^0.5.5":
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/@splidejs/vue-splide/-/vue-splide-0.5.5.tgz#0e3ad59e55de10da3a41f5987d296df4a5c9c689"
-  integrity sha512-bCSB17rJeAG4t55pnFrA6N6XYlR9nDcUYUaQqy6ssAq0S7aB2VkhEPwcS4ncituGMtfzV2BYPTpH3X29ATCnNg==
+"@splidejs/vue-splide@^0.5.6":
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/@splidejs/vue-splide/-/vue-splide-0.5.6.tgz#1358377f9819f18184bbb2ecc410931eb5fd2d1b"
+  integrity sha512-JzY7cfoSPEn6bDBxYPlOf2G4zdlVn6RNaA0DPVWhqRdKioaUV1bctz2fgAeG/O33vDP8jVucykiVx9doZ6Szog==
   dependencies:
-    "@splidejs/splide" "^3.2.2"
+    "@splidejs/splide" "^3.2.7"
 
 "@types/html-minifier-terser@^5.0.0":
   version "5.1.2"
