@@ -7,15 +7,6 @@ body {
   font-family: 'Manrope', sans-serif;
   font-weight: 600;
 }
-.btn {
-  @apply "bg-main text-white rounded-full p-3 px-5 flex items-center w-max";
-}
-.btn-email .icon {
-  @apply "px-3 pt-0.5 transition transition-all";
-}
-.btn-email:hover .icon {
-  @apply "pl-6";
-}
 .card {
   transition: all 1s;
 }
