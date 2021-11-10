@@ -87,7 +87,7 @@ export default {
     animation-direction: alternate;
 }
 .section-landing .wave {
-    @apply "w-full absolute filter h-2/5 left-0 top-[50%]";
+    @apply "w-full absolute h-2/5 left-0 top-[50%]";
     z-index: -1;
     filter: blur(185px);
     transform: rotate(-18.02deg) translateY(-50%);
