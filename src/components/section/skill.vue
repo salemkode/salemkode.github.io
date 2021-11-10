@@ -2,7 +2,7 @@
     <section class="section-skill">
         <h1>Frameworks I use</h1>
         <div class="content">
-            <a class="card" v-for="(url,name) in skills" :href="url" :key="name">
+            <a target="_blank" class="card" v-for="(url,name) in skills" :href="url" :key="name">
                 <img :src="'skill/' + name + '.svg'" alt />
             </a>
         </div>
@@ -33,7 +33,7 @@ export default {
     @apply "text-3xl";
 }
 .section-skill .content {
-    @apply "flex py-15 justify-center relative";
+    @apply "flex flex-wrap py-15 justify-center relative";
 }
 .section-skill .content .card {
     @apply "w-34 h-34 flex shadow-card p-6 m-5 rounded-lg";

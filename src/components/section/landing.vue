@@ -14,8 +14,8 @@
                 </h1>
                 <h1>Full stack web developer from Yemen</h1>
                 <div class="talk">
-                    <a ref="talk-telegram" class="talk-telegram" href="https://t.me/salemkode">
                     <email-btn text="Ready for new opportunities, let’s talk" />
+                    <a target="_blank" ref="talk-telegram" class="talk-telegram" href="https://t.me/salemkode">
                         <img src="media/telegram.svg" alt="icon of telegram" />
                     </a>
                 </div>
@@ -64,6 +64,7 @@ export default {
         },
         makeSquare(ref) {
             let node = this.$refs[ref];
+            node.style.width = "0px";
             node.style.width = node.offsetHeight + "px"
         }
     }
@@ -75,7 +76,7 @@ export default {
     @apply "h-screen relative";
 }
 .section-landing h1 {
-    @apply "text-3xl my-1 flex items-center ";
+    @apply "text-lg sm:text-2xl my-1 flex items-center ";
 }
 .section-landing h1 .hand-icon {
     animation: 1s hello;
@@ -97,10 +98,7 @@ export default {
     );
 }
 .section-landing .mouse {
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    top: 85%;
+    @apply "cursor-pointer absolute left-[50%] top-[85%] hidden md:block";
     transform: translate(-50%, -50%);
 }
 .section-landing .mouse rect {
@@ -110,10 +108,13 @@ export default {
     transform: translate(0, 26%);
 }
 .section-landing .content {
-    @apply "flex items-center h-full";
+    @apply "flex items-center justify-center h-full flex-col-reverse md:flex-row";
 }
 .section-landing .content > * {
-    @apply "w-1/2";
+    @apply "md:w-3/5";
+}
+.section-landing .content .photo {
+    @apply "md:w-2/5";
 }
 .section-landing .content .avater {
     @apply "m-auto";
@@ -122,7 +123,7 @@ export default {
     @apply "flex mt-8";
 }
 .section-landing .talk .talk-telegram {
-    @apply "p-2 mx-2 flex items-center justify-center border border-main rounded-full hover:bg-[#21242926]";
+    @apply "p-2 hidden md:flex mx-2 items-center justify-center border border-main rounded-full hover:bg-[#21242926]";
 }
 @keyframes hello {
     0% {

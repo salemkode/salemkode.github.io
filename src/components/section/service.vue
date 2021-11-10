@@ -42,10 +42,10 @@ export default {
     @apply "text-3xl";
 }
 .section-service .content {
-    @apply "flex py-15";
+    @apply "md:flex py-15";
 }
 .section-service .content .card {
-    @apply "w-1/3 shadow-card pb-8 px-6 m-5 rounded-lg";
+    @apply "md:w-1/3 shadow-card pb-8 px-6 m-5 rounded-lg";
 }
 .section-service .content .card > * {
     @apply "text-center mx-auto";

@@ -1,69 +1,96 @@
 <template>
-    <header :class="scrolled ? 'scrolled' : ''">
-        <nav>
-            <h1>SalemKode</h1>
-            <ul class="media-list">
-                <li v-for="(site,name) in media" :key="name">
-                    <a :href="site.url" class="media-item">
-                        <img :src="'media/' + name + '.svg'" :alt="'icon of' + name" />
-                    </a>
-                </li>
-                <li class="lang-btn">
-                    <img src="landing/world.svg" alt />
-                    <span>English</span>
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <header :class="scrolled ? 'scrolled' : ''">
+    <nav>
+      <h1>SalemKode <IconMenu :click="e=> dropdown_menu = !dropdown_menu" /></h1>
+      <SlideUpDown :active="dropdown_menu">
+        <ul class="media-list">
+          <li v-for="(site,name) in media" :key="name">
+            <a :href="site.url" target="_blank" class="media-item">
+              <img :src="'media/' + name + '.svg'" :alt="'icon of' + name" />
+            </a>
+          </li>
+          <li class="lang-btn">
+            <img src="landing/world.svg" alt />
+            <span>English</span>
+          </li>
+        </ul>
+      </SlideUpDown>
+    </nav>
+  </header>
 </template>
 
 <script>
+import SlideUpDown from 'vue-slide-up-down'
+
 export default {
-    data() {
-        return {
-            scrolled: false,
-            media: {
-                github: {
-                    url: 'https://github.com/salemkode',
-                },
-                telegram: {
-                    url: 'https://t.me/salemkode'
-                },
-                twitter: {
-                    url: 'https://twitter.com/salemkode'
-                },
-            }
-        }
-    },
-    mounted() {
-        let vue = this;
-        window.onscroll = function () {
-            vue.scrolled = !!window.scrollY;
-        }
+  data() {
+    return {
+      scrolled: false,
+      media: {
+        github: {
+          url: 'https://github.com/salemkode',
+        },
+        telegram: {
+          url: 'https://t.me/salemkode'
+        },
+        twitter: {
+          url: 'https://twitter.com/salemkode'
+        },
+      },
+      dropdown_menu: true,
     }
+  },
+  mounted() {
+    let _this = this;
+    window.onscroll = function () {
+      _this.scrolled = !!window.scrollY;
+    }
+    if (document.body.offsetWidth < 752) {
+      this.dropdown_menu = false
+    }
+    window.addEventListener("resize", function () {
+      if (document.body.offsetWidth < 752) {
+        _this.dropdown_menu = false
+      } else {
+        _this.dropdown_menu = true
+      }
+    })
+  },
+  methods: {
+    showDropdown() {
+      this.dropdown_menu = !this.dropdown_menu;
+    },
+  },
+  components: {
+    SlideUpDown
+  }
 }
 </script>
 
+
 <style scoped>
 header {
-    @apply "fixed right-0 left-0 z-50 py-4 font-bold transition";
+  @apply "fixed bg-white md:bg-transparent right-0 left-0 z-50 py-4 font-bold transition";
 }
 header nav {
-    @apply "w-full flex justify-between container items-center";
+  @apply "w-full flex flex-col md:flex-row justify-between container items-center";
+}
+header h1 {
+  @apply "flex justify-between w-full md:w-auto";
 }
 header.scrolled {
-    @apply "bg-white shadow-lg";
+  @apply "md:bg-white md:shadow-lg";
 }
 header nav .media-list {
-    @apply "flex";
+  @apply "flex my-3 md:m-0";
 }
 header nav .media-item {
-    @apply "mx-1 block rounded-full p-1.5 border-main border hover:bg-[#21242926]";
+  @apply "mx-1 block rounded-full p-1.5 border-main border hover:bg-[#21242926]";
 }
 header nav .lang-btn {
-    @apply "bg-main text-white rounded-full p-2 px-4 mx-2 flex items-center w-max";
+  @apply "bg-main text-white rounded-full p-2 px-4 mx-2 flex items-center w-max";
 }
 header nav .lang-btn span {
-    @apply "mx-2";
+  @apply "mx-2";
 }
 </style>
