@@ -8,9 +8,7 @@
       <strong>Need to know more? Just click to ask</strong>
       <img src="landing/next.svg" class="icon" alt />
     </button>
-    <footer class="bg-main text-white text-center py-6">
-      All rights reserved 2021
-    </footer>
+    <Footer />
   </div>
 </template>
 
