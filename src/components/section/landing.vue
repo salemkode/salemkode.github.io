@@ -51,7 +51,7 @@
 export default {
     methods: {
         down() {
-            let elmScroll = document.body.offsetHeight - document.querySelector("nav").offsetHeight;
+            let elmScroll = document.querySelector(".section-landing").offsetHeight - document.querySelector("nav").offsetHeight;
             window.scrollTo(0, elmScroll)
         }
     }
