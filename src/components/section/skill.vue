@@ -36,8 +36,7 @@ export default {
     @apply "flex py-15 justify-center relative";
 }
 .section-skill .content .card {
-    @apply "w-34 h-34 flex shadow-main p-6 m-5 rounded-lg";
-    box-shadow: 0px 0px 60px 5px rgb(0 0 0 / 35%);
+    @apply "w-34 h-34 flex shadow-card p-6 m-5 rounded-lg";
 }
 .section-skill .content .card > * {
     @apply "text-center m-auto";

@@ -45,7 +45,7 @@ export default {
     @apply "flex py-15";
 }
 .section-service .content .card {
-    @apply "w-1/3 shadow-main shadow-2xl pb-8 px-6 m-5 rounded-lg";
+    @apply "w-1/3 shadow-card pb-8 px-6 m-5 rounded-lg";
 }
 .section-service .content .card > * {
     @apply "text-center mx-auto";

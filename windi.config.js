@@ -16,6 +16,9 @@ export default {
           DEFAULT: '#212429',
         },
       },
+      boxShadow: {
+        card: '0px 0px 60px 5px rgb(0 0 0 / 35%)',
+      },
     },
   },
 }
