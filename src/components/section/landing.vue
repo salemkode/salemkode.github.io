@@ -19,6 +19,7 @@
                         <img src="landing/next.svg" class="icon" />
                     </a>
                     <a class="talk-telegram" href="https://t.me/salemkode">
+                    <a ref="talk-telegram" class="talk-telegram" href="https://t.me/salemkode">
                         <img src="media/telegram.svg" alt="icon of telegram" />
                     </a>
                 </div>
@@ -49,10 +50,25 @@
 
 <script>
 export default {
+    mounted() {
+        let vue = this;
+        vue.makeSquare("talk-telegram")
+        window.addEventListener("resize", function(){
+            vue.makeSquare("talk-telegram")
+        })
+    },
+    data() {
+        return {
+        }
+    },
     methods: {
         down() {
             let elmScroll = document.querySelector(".section-landing").offsetHeight - document.querySelector("nav").offsetHeight;
             window.scrollTo(0, elmScroll)
+        },
+        makeSquare(ref) {
+            let node = this.$refs[ref];
+            node.style.width = node.offsetHeight + "px"
         }
     }
 }
@@ -107,10 +123,10 @@ export default {
     @apply "m-auto";
 }
 .section-landing .talk {
-    @apply "flex items-center mt-8";
+    @apply "flex mt-8";
 }
 .section-landing .talk .talk-telegram {
-    @apply "p-2 m-2 w-10 h-10 flex items-center justify-center border border-main rounded-full hover:bg-[#21242926]";
+    @apply "p-2 mx-2 flex items-center justify-center border border-main rounded-full hover:bg-[#21242926]";
 }
 @keyframes hello {
     0% {
