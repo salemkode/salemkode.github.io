@@ -1,8 +1,11 @@
 <template>
   <header :class="scrolled ? 'scrolled' : ''">
     <nav>
-      <h1>SalemKode <IconMenu :click="e=> dropdown_menu = !dropdown_menu" /></h1>
-      <SlideUpDown :active="dropdown_menu">
+      <h1>
+        SalemKode
+        <IconMenu :click="e => dropdown_menu = !dropdown_menu" />
+      </h1>
+      <SlideUpDown :duration="200" :active="dropdown_menu">
         <ul class="media-list">
           <li v-for="(site,name) in media" :key="name">
             <a :href="site.url" target="_blank" class="media-item">
@@ -38,6 +41,7 @@ export default {
         },
       },
       dropdown_menu: true,
+      duration: 1000
     }
   },
   mounted() {
@@ -46,13 +50,13 @@ export default {
       _this.scrolled = !!window.scrollY;
     }
     if (document.body.offsetWidth < 752) {
-      this.dropdown_menu = false
+      _this.dropdown_menu = false;
     }
     window.addEventListener("resize", function () {
       if (document.body.offsetWidth < 752) {
-        _this.dropdown_menu = false
+        _this.dropdown_menu = false;
       } else {
-        _this.dropdown_menu = true
+        _this.dropdown_menu = true;
       }
     })
   },
