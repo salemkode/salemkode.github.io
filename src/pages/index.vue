@@ -4,10 +4,7 @@
     <section-landing />
     <section-service />
     <section-skill />
-    <button class="btn btn-email mx-auto my-3 mb-5">
-      <strong>Need to know more? Just click to ask</strong>
-      <img src="landing/next.svg" class="icon" alt />
-    </button>
+    <email-btn text="Need to know more? Just click to ask" class="mx-auto my-8"/>
     <Footer />
   </div>
 </template>

@@ -14,12 +14,8 @@
                 </h1>
                 <h1>Full stack web developer from Yemen</h1>
                 <div class="talk">
-                    <a class="btn-email btn" href="mailto: abc@example.com">
-                        <strong>Ready for new opportunities, let’s talk</strong>
-                        <img src="landing/next.svg" class="icon" />
-                    </a>
-                    <a class="talk-telegram" href="https://t.me/salemkode">
                     <a ref="talk-telegram" class="talk-telegram" href="https://t.me/salemkode">
+                    <email-btn text="Ready for new opportunities, let’s talk" />
                         <img src="media/telegram.svg" alt="icon of telegram" />
                     </a>
                 </div>
