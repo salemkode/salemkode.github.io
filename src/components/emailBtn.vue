@@ -1,5 +1,5 @@
 <template>
-    <a class="btn-email btn" href="mailto: abc@example.com">
+    <a class="btn-email btn" href="mailto:kodesalem@gmail.com">
         <strong>{{ text }}</strong>
         <img src="landing/next.svg" class="icon" />
     </a>
