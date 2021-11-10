@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 .section-service {
-    @apply "container py-10";
+    @apply "container py-10 bg-[#FBFBFB]";
 }
 .section-service h1 {
     @apply "text-3xl";
