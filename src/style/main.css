@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+* {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Manrope', sans-serif;
   font-weight: 600;
 }
-
-* {
-  scroll-behavior: smooth;
-}
-
 .btn {
   @apply "bg-main text-white rounded-full p-3 px-5 flex items-center w-max";
 }
-
 .btn-email .icon {
   @apply "px-3 pt-0.5 transition transition-all";
 }
 .btn-email:hover .icon {
   @apply "pl-6";
+}
+.card {
+  transition: all 1s;
+}
+.card:hover {
+  transform: scale(1.1);
 }
