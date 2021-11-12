@@ -1,6 +1,6 @@
 <template>
     <section class="section-landing container">
-        <div class="wave" />
+        <div class="shadow" />
         <div class="content">
             <div class="info">
                 <h1>
@@ -86,7 +86,7 @@ export default {
     animation: 1s hello;
     animation-direction: alternate;
 }
-.section-landing .wave {
+.section-landing .shadow {
     @apply "w-full absolute h-2/5 left-0 top-[50%]";
     z-index: -1;
     filter: blur(185px);
