@@ -89,8 +89,8 @@ export default {
 .section-landing .shadow {
     @apply "w-full absolute h-2/5 left-0 top-[50%]";
     z-index: -1;
-    filter: blur(185px);
-    transform: rotate(-18.02deg) translateY(-50%);
+    filter: blur(85px);
+    transform: rotate(-5deg) translateY(-50%);
     background: radial-gradient(
         109.72% 133.34% at 66.99% 117.71%,
         rgba(38, 232, 127, 0.5) 0%,
