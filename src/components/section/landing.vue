@@ -1,6 +1,6 @@
 <template>
     <section class="section-landing container">
-        <div class="shadow" />
+        <div class="shadow center-position" />
         <div class="content">
             <div class="info">
                 <h1>
@@ -15,7 +15,12 @@
                 <h1>Full stack web developer from Yemen</h1>
                 <div class="talk">
                     <email-btn text="Ready for new opportunities, let’s talk" />
-                    <a target="_blank" ref="talk-telegram" class="talk-telegram" href="https://t.me/salemkode">
+                    <a
+                        target="_blank"
+                        ref="talk-telegram"
+                        class="talk-telegram"
+                        href="https://t.me/salemkode"
+                    >
                         <img src="media/telegram.svg" alt="icon of telegram" />
                     </a>
                 </div>
@@ -49,7 +54,7 @@ export default {
     mounted() {
         let vue = this;
         vue.makeSquare("talk-telegram")
-        window.addEventListener("resize", function(){
+        window.addEventListener("resize", function () {
             vue.makeSquare("talk-telegram")
         })
     },
@@ -87,14 +92,14 @@ export default {
     animation-direction: alternate;
 }
 .section-landing .shadow {
-    @apply "w-full absolute h-2/5 left-0 top-[50%]";
+    @apply "w-full absolute h-2/5";
     z-index: -1;
     filter: blur(85px);
-    transform: rotate(-5deg) translateY(-50%);
+    transform: rotate(-5deg) translate(-50%,-50%);
     background: radial-gradient(
         109.72% 133.34% at 66.99% 117.71%,
-        rgba(38, 232, 127, 0.5) 0%,
-        rgba(0, 163, 255, 0.5) 100%
+        rgba(38, 232, 127, 0.3) 0%,
+        rgba(0, 163, 255, 0.3) 100%
     );
 }
 .section-landing .mouse {
@@ -114,7 +119,7 @@ export default {
     @apply "md:w-3/5";
 }
 .section-landing .content .photo {
-    @apply "md:w-2/5";
+    @apply "md:w-2/5 w-4/5";
 }
 .section-landing .content .avater {
     @apply "m-auto";
@@ -123,7 +128,7 @@ export default {
     @apply "flex mt-8";
 }
 .section-landing .talk .talk-telegram {
-    @apply "p-2 hidden md:flex mx-2 items-center justify-center border border-main rounded-full hover:bg-[#21242926]";
+    @apply "p-2 transition hidden md:flex mx-2 items-center justify-center border border-main rounded-full hover:bg-[#21242926]";
 }
 @keyframes hello {
     0% {
