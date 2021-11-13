@@ -16,6 +16,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      // social media meta tag
+      { name: 'og:title', content: 'Salemkode' },
+      { name: 'og:description', content: 'Personal website of Salem Shamakh,Full web stack developer' },
+      // twitter card
+      { name: 'twitter:title', content: 'Salemkode' },
+      { name: 'twitter:description', content: 'Personal website of Salem Shamakh,Full web stack developer' },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:site', content: 'https://salemkode.com' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.png' },
