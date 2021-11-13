@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-main text-white text-center py-6">
+    <footer class="bg-main text-white py-6">
       <div class=" container md:flex justify-between">
         <h4 class="my-2"> All rights reserved {{ new Date().getFullYear() }}</h4>
         <h4 class="my-2">
