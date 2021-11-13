@@ -4,8 +4,8 @@ export default {
       center: true,
       padding: {
         DEFAULT: '1rem',
-        sm: '1rem',
-        lg: '3rem',
+        md: '2rem',
+        lg: '4rem',
         xl: '5rem',
         '2xl': '6rem',
       },
@@ -17,7 +17,7 @@ export default {
         },
       },
       boxShadow: {
-        card: '0px 0px 60px 5px rgb(0 0 0 / 35%)',
+        card: '0px 0px 20px 1px rgb(0 0 0 / 15%)',
       },
     },
   },
