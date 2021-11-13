@@ -46,6 +46,7 @@ export default {
   },
   mounted() {
     let _this = this;
+    _this.scrolled = !!window.scrollY;
     window.onscroll = function () {
       _this.scrolled = !!window.scrollY;
     }
@@ -74,22 +75,22 @@ export default {
 
 <style scoped>
 header {
-  @apply "fixed bg-white md:bg-transparent right-0 left-0 z-50 py-4 font-bold transition";
+  @apply "fixed md:bg-transparent right-0 left-0 z-50 py-4 font-bold transition";
 }
 header nav {
   @apply "w-full flex flex-col md:flex-row justify-between container items-center";
 }
 header h1 {
-  @apply "flex justify-between w-full md:w-auto";
+  @apply "flex justify-between w-full md:w-auto text-2xl";
 }
 header.scrolled {
-  @apply "md:bg-white md:shadow-lg";
+  backdrop-filter: blur(100px);
 }
 header nav .media-list {
   @apply "flex my-3 md:m-0";
 }
 header nav .media-item {
-  @apply "mx-1 block rounded-full p-1.5 border-main border hover:bg-[#21242926]";
+  @apply "mx-1 block rounded-full p-1.5 transition border-main border hover:bg-[#21242926]";
 }
 header nav .lang-btn {
   @apply "bg-main text-white rounded-full p-2 px-4 mx-2 flex items-center w-max";
