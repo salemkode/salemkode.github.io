@@ -7,4 +7,19 @@ body {
   font-family: 'Manrope', sans-serif;
   font-weight: 600;
 }
+.center-position {
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+section > h1{
+  @apply "text-center md:text-left";
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }

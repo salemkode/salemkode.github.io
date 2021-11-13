@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .section-service {
-    @apply "container py-10 bg-opacity-5";
+    @apply "container py-10 bg-opacity-5 overflow-hidden";
 }
 .section-service h1 {
     @apply "text-3xl";
