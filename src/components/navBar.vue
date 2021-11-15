@@ -91,6 +91,7 @@ header.scrolled {
 }
 header nav .media-list {
   @apply "flex my-3 md:m-0";
+  backdrop-filter: blur(6px);
 }
 header nav .media-item {
   @apply "mx-1 block rounded-full p-1.5 transition border-main border hover:bg-[#21242926]";
