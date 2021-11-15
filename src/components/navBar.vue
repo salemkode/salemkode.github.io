@@ -9,11 +9,11 @@
         <ul class="media-list">
           <li v-for="(site,name) in media" :key="name">
             <a :href="site.url" target="_blank" class="media-item">
-              <img :src="'media/' + name + '.svg'" :alt="'icon of' + name" />
+              <img :src="'/media/' + name + '.svg'" :alt="'icon of' + name" />
             </a>
           </li>
           <li class="lang-btn">
-            <img src="landing/world.svg" alt />
+            <img :src="'/landing/world.svg'" alt />
             <span>English</span>
           </li>
         </ul>
