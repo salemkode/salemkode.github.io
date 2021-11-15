@@ -2,7 +2,7 @@
   <header :class="scrolled ? 'scrolled' : ''">
     <nav>
       <h1>
-        <nuxt-link to="/">SalemKode</nuxt-link>
+        <a href="/">SalemKode</a>
         <IconMenu :click="e => dropdown_menu = !dropdown_menu" />
       </h1>
       <SlideUpDown :duration="200" :active="dropdown_menu">
