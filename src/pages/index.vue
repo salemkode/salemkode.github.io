@@ -4,6 +4,7 @@
     <section-service />
     <section-skill />
     <email-btn text="Need to know more? Just click to ask" _class="mx-auto my-8"/>
+    <a class="hidden" href="/project/flipstarter">/project/flipstarter</a>
   </Fragment>
 </template>
 
