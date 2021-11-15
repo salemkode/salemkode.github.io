@@ -128,7 +128,8 @@ export default {
     @apply "flex mt-8";
 }
 .section-landing .talk .talk-telegram {
-    @apply "p-2 transition hidden md:flex mx-2 items-center justify-center border border-main rounded-full hover:bg-[#21242926]";
+    @apply "p-2 hidden md:flex mx-2 items-center justify-center border border-main rounded-full hover:bg-[#21242926]";
+    transition: .3s all;
 }
 @keyframes hello {
     0% {

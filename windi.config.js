@@ -1,4 +1,7 @@
 export default {
+  plugins: [
+    require('windicss/plugin/typography'),
+  ],
   theme: {
     container: {
       center: true,

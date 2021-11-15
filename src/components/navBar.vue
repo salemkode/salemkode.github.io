@@ -2,7 +2,7 @@
   <header :class="scrolled ? 'scrolled' : ''">
     <nav>
       <h1>
-        SalemKode
+        <nuxt-link to="/">SalemKode</nuxt-link>
         <IconMenu :click="e => dropdown_menu = !dropdown_menu" />
       </h1>
       <SlideUpDown :duration="200" :active="dropdown_menu">
@@ -30,6 +30,9 @@ export default {
     return {
       scrolled: false,
       media: {
+        gitlab: {
+          url: 'https://gitlab.com/salemkode',
+        },
         github: {
           url: 'https://github.com/salemkode',
         },
@@ -91,6 +94,7 @@ header nav .media-list {
 }
 header nav .media-item {
   @apply "mx-1 block rounded-full p-1.5 transition border-main border hover:bg-[#21242926]";
+  transition: 0.3s all;
 }
 header nav .lang-btn {
   @apply "bg-main text-white rounded-full p-2 px-4 mx-2 flex items-center w-max";
