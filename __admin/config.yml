@@ -8,6 +8,7 @@ public_folder: /img
 collections:
   - name: 'blog'
     label: 'Blog'
+    folder: '/'
     media_folder: 'src/static/media'
     public_folder: 'src/content/blog'
     format: 'frontmatter'
