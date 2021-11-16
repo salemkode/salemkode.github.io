@@ -5,7 +5,10 @@ image: ''
 video: ''
 ---
 
-## I'm Salem Shamakh
+## Page of my Flipstarter development work
+
+> [Check my website for more info](https://salemkode.com)
+---
 
 ### [Add a field for progress tracking URL](https://gitlab.com/flipstarter/backend/-/merge_requests/56)
 
