@@ -77,17 +77,27 @@ export default {
 
 
 <style scoped>
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  header.scrolled {
+    backdrop-filter: blur(50px);
+  }
+}
+
+/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  header {
+    background-color: rgba(255, 255, 255, .8);
+  }
+}
+
 header {
-  @apply "fixed md:bg-transparent right-0 left-0 z-50 py-4 font-bold transition";
+  @apply "fixed right-0 left-0 z-50 py-4 font-bold transition";
 }
 header nav {
   @apply "w-full flex flex-col md:flex-row justify-between container items-center";
 }
 header h1 {
   @apply "flex justify-between w-full md:w-auto text-2xl";
-}
-header.scrolled {
-  backdrop-filter: blur(100px);
 }
 header nav .media-list {
   @apply "flex my-3 md:m-0";
