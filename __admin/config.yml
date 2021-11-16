@@ -8,8 +8,8 @@ public_folder: /img
 collections:
   - name: 'blog'
     label: 'Blog'
-    folder: 'src/content/blog'
-    media_folder: "/src/static/images/uploads"
+    media_folder: 'src/static/media'
+    public_folder: 'src/content/blog'
     format: 'frontmatter'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
