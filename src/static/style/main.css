@@ -1,3 +1,10 @@
+html , body , #__nuxt , #__layout {
+  height: 100%;
+}
+#__layout {
+  display: flex;
+  flex-direction: column;
+}
 * {
   scroll-behavior: smooth;
 }
@@ -11,8 +18,10 @@ body {
   left: 50%;
 }
 
-section > h1{
-  @apply "text-center md:text-left";
+@media (max-width: 768px) {
+  .section > h1 {
+    text-align: center;
+  }
 }
 
 .fade-enter-active, .fade-leave-active {

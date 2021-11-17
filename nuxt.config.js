@@ -40,13 +40,12 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap',
       },
+      {
+        rel: 'stylesheet',
+        href: '/style/main.css',
+      },
     ],
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    "src/style/main.css"
-  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
