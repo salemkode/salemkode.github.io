@@ -29,9 +29,6 @@ export default {
 .section-skill {
     @apply "container py-10";
 }
-.section-skill h1 {
-    @apply "text-3xl";
-}
 .section-skill .content {
     @apply "flex flex-wrap py-15 justify-center relative";
 }
