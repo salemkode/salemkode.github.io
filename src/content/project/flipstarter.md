@@ -1,8 +1,7 @@
 ---
 title: 'flipstarter'
-description: ''
-image: ''
-video: ''
+description: 'Working on the Flip Starter project to fix problems and add new features'
+image: '/media_upload/flipstarter.png'
 ---
 
 ## Page of my Flipstarter development work
