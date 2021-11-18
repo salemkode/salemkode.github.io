@@ -1,16 +1,14 @@
 <template>
-  <div class="page">
-    <article class="container pt-20 prose">
-      <h1>{{ page.title }}</h1>
-      <nuxt-content class :document="page" />
-    </article>
-  </div>
+  <main class="container prose">
+    <h1>{{ page.title }} - project</h1>
+    <nuxt-content class :document="page" />
+  </main>
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const page = await $content('project', params.project).fetch()
+    const page = await $content('project', params.slug).fetch()
 
     return {
       page
@@ -20,7 +18,7 @@ export default {
     return {
       title: this.page.title + ' - project',
       meta: [
-        {hid: 'og:title', property: 'og:title', content: this.page.title},
+        { hid: 'og:title', property: 'og:title', content: this.page.title },
       ]
     }
   }
@@ -28,6 +26,10 @@ export default {
 </script>
 
 <style>
+header {
+  position: sticky !important;
+  top: 0;
+}
 .prose hr {
   background: #e5e7eb;
   height: 1px;
