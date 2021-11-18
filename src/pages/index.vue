@@ -1,18 +1,26 @@
 <template>
-  <Fragment>
+  <div>
     <section-landing />
     <section-service />
     <section-skill />
-    <email-btn text="Need to know more? Just click to ask" _class="mx-auto my-8"/>
-    <a class="hidden" href="/project/flipstarter">/project/flipstarter</a>
-  </Fragment>
+    <section-project :articles="articles"/>
+    <email-btn text="Need to know more? Just click to ask" _class="mx-auto my-8" />
+  </div>
 </template>
 
 <script>
-import { Fragment } from 'vue-fragment';
 export default {
-    components: {
-        Fragment
+  async asyncData({ $content }) {
+    let articles = await $content('project')
+      .only(['title', 'description', 'image', 'path'])
+      .sortBy('createdAt', 'asc')
+      .fetch();
+
+    articles = articles.slice(0, 3)
+
+    return {
+      articles
     }
+  },
 }
 </script>
