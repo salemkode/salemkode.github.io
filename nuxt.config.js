@@ -74,8 +74,7 @@ export default {
     async routes () {
       const { $content } = require('@nuxt/content')
       const project = await $content("project").only(['path']).fetch()
-      const blog = await $content("blog").only(['path']).fetch()
-      return [...blog , ...project].map(file => file.path === '/index' ? '/' : file.path)
+      return project.map(file => file.path === '/index' ? '/' : file.path)
     }
   }
 
