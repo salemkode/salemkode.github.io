@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <a :href="project.path" v-for="project in projects" :key="project.title" class="card">
+        <a v-for="project in projects" :href="getCardUrl(project)" :key="project.title" class="card">
             <img :src="project.image" />
             <div class="px-8 my-3">
                 <h1 class="text-2xl mb-3">{{ project.title }}</h1>
@@ -14,13 +14,18 @@
 export default {
     async asyncData({ $content }) {
         const projects = await $content('project')
-            .only(["title", "description", "image", "path"])
+            .only(["title", "description", "image", "path", "url"])
             .fetch()
 
         return {
             projects
         }
     },
+    methods : {
+      getCardUrl(project){
+        return project.url || project.path;
+      }
+    }
 }
 </script>
 

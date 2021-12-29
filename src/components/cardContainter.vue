@@ -1,6 +1,6 @@
 <template>
     <div class="card-container">
-        <a :href="card.path" class="card" v-for="card in data" :key="card.title">
+        <a :href="card.url || card.path" class="card" v-for="card in data" :key="card.title">
             <img v-if="img" :src="img(card)" alt :class="size === 'large' ? 'large' : ''"/>
             <div class="info">
                 <h3 v-text="card.title" />
