@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/project", {data:[{projects:[{description:"Working on the Flip Starter project to fix problems and add new features",title:"flipstarter",image:"\u002Fmedia_upload\u002Fflipstarter.png",path:"\u002Fproject\u002Fflipstarter"}]}],fetch:{},mutations:void 0});
