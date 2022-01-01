@@ -12,9 +12,6 @@
 
 <script>
 export default {
-    mounted(){
-        console.log(this.size , ":" , this.size === 'large' ? 'large' : '')
-    },
     props: [
         "data",
         "img",
@@ -41,7 +38,7 @@ export default {
     @apply "md:w-1/3 shadow-card rounded-lg bg-white relative overflow-hidden block";
 }
 .card img.large{
-    @apply "h-[150px] w-full object-cover";
+    @apply "h-[200px] w-full object-cover";
 }
 .card img.large ~ .info{
     @apply "pt-3";
