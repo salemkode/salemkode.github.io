@@ -22,7 +22,7 @@ export default {
   props: ["text", "_class"],
   data() {
     return {
-      email: "kodesalem@gmail.com",
+      email: "salemkode@salemkode.com",
       popup: false,
       alert: false
     }
