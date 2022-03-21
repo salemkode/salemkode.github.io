@@ -77,17 +77,9 @@ export default {
 
 
 <style scoped>
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  header.scrolled {
-    backdrop-filter: blur(50px);
-  }
-}
-
-/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  header {
-    background-color: rgba(255, 255, 255, .8);
-  }
+header.scrolled {
+  backdrop-filter: blur(50px);
+  background-color: rgba(255, 255, 255, .7);
 }
 
 header {
@@ -101,7 +93,6 @@ header h1 {
 }
 header nav .media-list {
   @apply "flex my-3 md:m-0";
-  backdrop-filter: blur(6px);
 }
 header nav .media-item {
   @apply "mx-1 block rounded-full p-1.5 transition border-main border hover:bg-[#21242926]";
