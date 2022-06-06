@@ -15,10 +15,11 @@ export default {
         return {
             skills: {
                 nuxt: "https://nuxtjs.org/",
+                nestjs: "https://nestjs.com/",
+                react: "https://reactjs.org",
+                bootstrap: "https://getbootstrap.com/",
                 windicss: "https://windicss.org/",
                 nodejs: "https://nodejs.org/",
-                bootstrap: "https://getbootstrap.com/",
-                solidity: "https://soliditylang.org/",
             }
         }
     }
