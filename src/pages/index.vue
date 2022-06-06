@@ -12,8 +12,8 @@
 export default {
   async asyncData({ $content }) {
     let articles = await $content('project')
-      .only(['title', 'description', 'image', 'path', 'url'])
-      .sortBy('createdAt', 'asc')
+      .only(['title', 'description', 'image', 'flags', 'path', 'url'])
+      .sortBy('order', 'asc')
       .fetch();
 
     articles = articles.slice(0, 3)
