@@ -12,10 +12,6 @@
               <img :src="'/media/' + name + '.svg'" :alt="'icon of' + name" />
             </a>
           </li>
-          <li class="lang-btn">
-            <img :src="'/landing/world.svg'" alt />
-            <span>English</span>
-          </li>
         </ul>
       </SlideUpDown>
     </nav>
