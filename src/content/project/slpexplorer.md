@@ -5,7 +5,7 @@ image: /media_upload/slp.png
 order: 1
 flags:
   - Nestjs
-  - Vuejs
+  - Nuxtjs
   - Typescript
 url: https://simpleledger.info/
 ---
