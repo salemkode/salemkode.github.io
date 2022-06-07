@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .card-container {
-  @apply "md:flex relative";
+  @apply "relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4";
 }
 .card-container::before {
   content: '';
@@ -48,7 +48,7 @@ export default {
   filter: blur(25px);
 }
 .card {
-  @apply "md:w-1/3 rounded-lg bg-white relative overflow-hidden block";
+  @apply "rounded-lg bg-white relative overflow-hidden block";
 }
 .card .flags {
   display: flex;
@@ -73,9 +73,6 @@ export default {
 }
 .card .info {
   @apply "pb-8 px-6";
-}
-.card:nth-child(2) {
-  @apply "my-6 md:mx-6 md:my-0";
 }
 .card > * {
   @apply "text-center mx-auto";
