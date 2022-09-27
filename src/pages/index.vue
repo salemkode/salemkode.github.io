@@ -16,8 +16,6 @@ export default {
       .sortBy('order', 'asc')
       .fetch();
 
-    articles = articles.slice(0, 3)
-
     return {
       articles
     }
