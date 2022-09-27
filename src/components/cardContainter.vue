@@ -33,22 +33,11 @@ export default {
 
 <style scoped>
 .card-container {
-  @apply "relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4";
-}
-.card-container::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  background: #606060;
-  opacity: 0.15;
-  filter: blur(25px);
+  @apply "relative grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4";
 }
 .card {
   @apply "rounded-lg bg-white relative overflow-hidden block";
+  outline: 0.1px #e3e3e3 solid;
 }
 .card .flags {
   display: flex;

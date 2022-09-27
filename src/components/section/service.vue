@@ -40,7 +40,7 @@ export default {
     @apply "container py-10 bg-opacity-5 overflow-hidden";
 }
 .section-service .content {
-    @apply "md:flex py-15 relative";
+    @apply "py-15";
 }
 .section-service .content {
     @apply "py-15";
