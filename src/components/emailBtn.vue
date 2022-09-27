@@ -6,7 +6,7 @@
     </a>
     <pop-up :show="popup" @close="popup = !popup;">
       <img src="mail.svg" class="p-3 h-1/2 m-auto" alt />
-      <h1 class="mt-3 p-3 bg-dark-200 rounded-md text-white bold" v-text="email" />
+      <h4 class="mt-3 p-3 bg-dark-200 rounded-md text-white bold" v-text="email" />
       <button @click="copyMail()" class="btn btn-mail">Copy my mail</button>
     </pop-up>
     <transition name="fade">
@@ -22,7 +22,7 @@ export default {
   props: ["text", "_class"],
   data() {
     return {
-      email: "salemkode@salemkode.com",
+      email: "salemkode@proton.me",
       popup: false,
       alert: false
     }

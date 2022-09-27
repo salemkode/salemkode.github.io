@@ -1,7 +1,7 @@
 <template>
     <Fragment>
         <transition name="fade">
-            <div class="popup center-position shadow-card" v-show="show">
+            <div class="popup center-position" v-show="show">
                 <slot />
             </div>
         </transition>
@@ -27,7 +27,7 @@ export default {
 
 <style scoped>
 .popup {
-    @apply "fixed flex flex-col bg-white p-4 rounded-md text-black w-[320px] h-[350px] z-60";
+    @apply "fixed flex flex-col bg-white p-4 rounded-md text-black w-[360px] h-[350px] z-60";
 }
 .popup-shadow {
     @apply "fixed bg-white bg-opacity-5 w-full h-full z-50";
