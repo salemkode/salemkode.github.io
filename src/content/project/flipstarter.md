@@ -4,7 +4,7 @@ description: Working on the Flip Starter project to fix problems and add new fea
 image: /media_upload/flipstarter.png
 order: 5
 flags:
-  - Js
+  - Javascript
   - Bitcoin cash
   - Express
   - Contributor

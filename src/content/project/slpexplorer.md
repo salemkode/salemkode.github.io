@@ -6,6 +6,6 @@ order: 1
 flags:
   - Nestjs
   - Nuxtjs
-  - Ts
+  - Typescript
 url: https://simpleledger.info/
 ---
